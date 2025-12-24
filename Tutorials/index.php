@@ -144,14 +144,78 @@
 
     // Array
 
-    $arrayName = array(1,2,3,4,5, 6, 7, 8, 9, 10);
+    // $arrayName = array(1,2,3,4,5, 6, 7, 8, 9, 10);
     
-    foreach ($arrayName as $array) {
-        // echo $array;
-        if ($array % 2 == 0) {
-            echo $array . " ";
-        }
+    // foreach ($arrayName as $array) {
+    //     // echo $array;
+    //     if ($array % 2 == 0) {
+    //         echo $array . " ";
+    //     }
+    // }
+
+    //QUESTION 8 ARRAY
+    // Associative array: days of the week => activities
+    // $activities = [
+    //     "Monday" => "Go to gym",
+    //     "Tuesday" => "Attend coding class",
+    //     "Wednesday" => "Grocery shopping",
+    //     "Thursday" => "Read a book",
+    //     "Friday" => "Watch a movie",
+    //     "Saturday" => "Hang out with friends",
+    //     "Sunday" => "Rest and relax"
+    // ];
+
+    // foreach ($activities as $day => $activity) {
+    //     $today = "Sunday";
+    //     if ($day == $today) {
+    //         echo $activities[$day];
+    //     }
+
+    // }   
+
+
+
+    //QUESTION 9 ARRAY
+    $students = [
+        "Aashutosh" => 100,
+        "Bob" => 92,
+        "Charlie" => 78,
+        "David" => 95,
+        "Eva" => 88
+    ];
+
+    // Print Students Name
+
+    // foreach ($students as $student => $mark) {
+    //     echo $student. "<br>"; 
+    // }
+
+    // Print Highest Mark
+
+    $topper = "";
+    $higestMarks = 0;
+
+    foreach ($students as $student => $mark) {
+       if ($higestMarks < $mark) {
+            $higestMarks = $mark;
+            $topper = $student;
+       }
     }
+
+    echo "The topper is $topper" . ":" . "$higestMarks";
+
+
+    
+
+
+
+    // Question 10
+    // $a = array('One' => 'Cat', 'Two' => 'Dog', 'Three' =>'Elephant', 'Four' => 'fox');
+
+    // foreach ($a as $number => $animals) {
+    //     echo $number. " : ". $animals. "<br>";
+    // }
+
 ?>
 
 </body>
